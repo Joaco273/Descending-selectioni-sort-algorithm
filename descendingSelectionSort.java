@@ -7,7 +7,7 @@ public class descendingSelectionSort{
    int array[] = new int [numbers];
    
    for (int x=0; x<array.length;x++){
-      System.out.print("Please input score n"+(x+1)+" > ");
+      System.out.print("Please input the value for score number "+(x+1)+" > ");
       array[x] = keyboard.nextInt();         //filling array
    }
    
@@ -42,7 +42,9 @@ public class descendingSelectionSort{
    for (int z=0; z<array.length; z++){
       System.out.print(array[z] + ", ");  //printing array
    }
-   
+
+   keyboard.close();
+
    }//end main
    
    public static int minIndex(int [] arr, int numOfEl){  //finding the index at which the minimum value is located
